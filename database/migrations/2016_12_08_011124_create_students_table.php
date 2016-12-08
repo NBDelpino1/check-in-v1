@@ -16,7 +16,11 @@ class CreateStudentsTable extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->increments('id');
             $table->text('assignment');
-            $table->dateTime('due');
+            $table->dateTime('dateAssigned');
+            $table->dateTime('dateDue');
+            $table->text('resources');
+            $table->text('studentSubmission');
+            $table->boolean('status');
             $table->timestamps();
         });
     }
