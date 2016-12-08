@@ -1,1 +1,1 @@
-# check-in-v1
+Application allows students to record attendance, view and submit assignments
